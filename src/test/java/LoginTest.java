@@ -20,7 +20,7 @@ public class LoginTest extends SeleniumBase {
     public void githubFailedLogin() {
          LoginPage loginPage =  new LoginPage();
 
-        assertFalse(loginPage.isErrorMessageDisplayed(), "Error message should not displayed!");
+//        assertFalse(loginPage.isErrorMessageDisplayed(), "Error message should not displayed!");
         loginPage.loginWith("mail@mail.am", "Password");
 
         assertTrue(loginPage.isErrorMessageDisplayed(), "Error message was not displayed!");

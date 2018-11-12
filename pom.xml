@@ -9,6 +9,16 @@
     <version>1.0-SNAPSHOT</version>
     <dependencies>
         <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>3.11.0</version>
+        </dependency>
+        <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>3.14.0</version>
@@ -37,14 +47,14 @@
                     <drivers>
                         <driver>
                             <name>chromedriver</name>
-                            <platform>mac</platform>
-                            <bit>64</bit>
+                            <platform>windows</platform>
+                            <bit>32</bit>
                             <version>2.43</version>
                         </driver>
                         <driver>
                             <name>geckodriver</name>
-                            <platform>mac</platform>
-                            <bit>64</bit>
+                            <platform>windows</platform>
+                            <bit>32</bit>
                             <version>0.23.0</version>
                         </driver>
                     </drivers>

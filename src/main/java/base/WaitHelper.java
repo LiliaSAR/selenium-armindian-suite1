@@ -11,12 +11,12 @@ public class WaitHelper {
         return waitHelper;
     }
 
-    public void waitForElementToBeVisible(By location) {
+    public static void waitForElementToBeVisible(By location) {
         new WebDriverWait(DriverHelper.get().getDriver(), 10)
                 .until(ExpectedConditions.visibilityOfElementLocated(location));
     }
 
-    public void waitForElementToBeVisible(WebElement element) {
+    public static void waitForElementToBeVisible(WebElement element) {
         new WebDriverWait(DriverHelper.get().getDriver(), 10)
                 .until(ExpectedConditions.visibilityOf(element));
     }
